@@ -14,8 +14,18 @@ struct ContentView: View {
         
 //        RadialGradient(gradient: Gradient(colors: [.blue, .black]), center: .center, startRadius: 20, endRadius: 200)
         
-        AngularGradient(gradient: Gradient(colors: [.red, .yellow, .green, .blue, .purple, .red]), center: .center)
+//        AngularGradient(gradient: Gradient(colors: [.red, .yellow, .green, .blue, .purple, .red]), center: .center)
+//
         
+        Button(action: {
+            print("Button was tapped")
+        }) {
+            HStack(spacing: 10){
+                Image(systemName: "pencil")
+                Text("Tap me!")
+            }
+            
+        }
     }
 }
 
